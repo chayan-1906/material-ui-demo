@@ -6,7 +6,7 @@ export const MuiRating = () => {
     const [value, setValue] = useState<number | null>(3)
     console.log({value})
 
-    const handleChange = (event: ChangeEvent<NonNullable<unknown>>, newValue: number | null) => {
+    const handleChange = (_event: ChangeEvent<NonNullable<unknown>>, newValue: number | null) => {
         setValue(newValue)
     }
 

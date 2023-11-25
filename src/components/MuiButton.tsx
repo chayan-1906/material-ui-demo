@@ -1,12 +1,12 @@
 import {Button, ButtonGroup, IconButton, Stack, ToggleButton, ToggleButtonGroup} from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
-import {useState} from 'react';
+import React, {useState} from 'react';
 import {FormatBoldRounded, FormatItalicRounded, FormatUnderlinedRounded} from '@mui/icons-material';
 
 export const MuiButton = () => {
     const [formats, setFormats] = useState<string[]>([])
 
-    const handleFormatChange = (_event: MouseEvent<HTMLElement>, updatedFormats: string[]) => {
+    const handleFormatChange = (_event: React.MouseEvent<HTMLElement>, updatedFormats: string[]) => {
         setFormats(updatedFormats)
     }
 
