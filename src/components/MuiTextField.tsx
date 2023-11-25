@@ -1,5 +1,5 @@
-import {InputAdornment, Stack, TextField} from "@mui/material";
-import {useState} from "react";
+import {InputAdornment, Stack, TextField} from '@mui/material';
+import {useState} from 'react';
 
 export const MuiTextField = () => {
     const [value, setValue] = useState('')

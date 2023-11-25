@@ -30,3 +30,24 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 https://github.com/gopinav/React-MUI-Tutorials/tree/master/react-mui-demo
+
+<table>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/b619e329-7e12-45be-97f4-e34486989df8" alt="MUI Typography" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/835daa14-c2df-423d-a240-bc164e148b9c" alt="MUI Button" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/f7ead461-b601-4f47-a832-add5f45fab73" alt="MUI Textfield" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/85d1e52d-53a2-4244-9e82-a14e5a549f77" alt="MUI Select" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/995c8c31-529c-41af-a8dd-8ad9156bb122" alt="MUI Radio Button" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/122ebc46-9f56-4eca-b790-9c484428fcc3" alt="MUI Checkbox" width="500px"></td>
+    </tr>
+</table>
