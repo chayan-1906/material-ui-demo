@@ -1,9 +1,10 @@
 import {Box, Button, Stack} from '@mui/material'
 import {
-    CheckBoxRounded,
+    CheckBoxRounded, Collections,
     RadioButtonCheckedTwoTone,
     SelectAllRounded,
-    SmartButtonRounded, Stars,
+    SmartButtonRounded,
+    Stars,
     TextFieldsRounded,
     Textsms,
     ToggleOnRounded
@@ -49,6 +50,24 @@ export const Home = () => {
                     <Link to='/rating'>
                         <Button variant='contained' color='primary' startIcon={<Stars/>}
                                 sx={{marginBottom: '16px'}}>MUI Rating</Button>
+                    </Link>
+                    <Link to='/autocomplete'>
+                        <Button variant='outlined' color='warning' sx={{marginBottom: '16px'}}>MUI Autocomplete</Button>
+                    </Link>
+                    <Link to='/box'>
+                        <Button variant='contained' color='info' sx={{marginBottom: '16px'}}>MUI Box/Stack/Grid</Button>
+                    </Link>
+                    <Link to='/card'>
+                        <Button variant='outlined' color='error' sx={{marginBottom: '16px'}}>MUI Card</Button>
+                    </Link>
+                    <Link to='/accordion'>
+                        <Button variant='contained' color='secondary' sx={{marginBottom: '16px'}}>MUI Accordion</Button>
+                    </Link>
+                </Stack>
+
+                <Stack spacing={4} direction='row'>
+                    <Link to='/images'>
+                        <Button variant='contained' color='success' sx={{marginBottom: '16px'}} startIcon={<Collections/>}>MUI Image List</Button>
                     </Link>
                 </Stack>
             </Stack>

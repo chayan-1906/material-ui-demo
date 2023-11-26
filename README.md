@@ -52,4 +52,25 @@ https://github.com/gopinav/React-MUI-Tutorials/tree/master/react-mui-demo
     <tr>
         <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/122ebc46-9f56-4eca-b790-9c484428fcc3" alt="MUI Checkbox" width="500px"></td>
     </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/02c28199-92a9-4fed-8ba2-a6df7a9465d8" alt="MUI Switch" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/2637f394-7908-4e8f-91c0-e9094233e02f" alt="MUI Rating" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/caa9c270-9da1-4059-8ca2-8b124e4c03f5" alt="MUI Autocomplete" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/af30c9e7-2cff-4057-9828-3cab0adef326" alt="MUI Box/Stack/Grid" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/f92c2ae2-be2d-4be9-b239-33b5b3671e32" alt="MUI Card" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/264ced05-d367-46c8-bafa-b66b86673b7b" alt="MUI Accordion" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/286bde67-a5b6-45a0-9091-59619e40e5a5" alt="MUI Image List" width="500px"></td>
+    </tr>
 </table>
