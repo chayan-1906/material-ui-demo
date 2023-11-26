@@ -1,5 +1,5 @@
-import {Autocomplete, Stack, TextField} from '@mui/material';
-import {useState} from 'react';
+import {Autocomplete, Stack, TextField} from '@mui/material'
+import {useState} from 'react'
 
 type Skill = {
     id: string,
@@ -20,18 +20,18 @@ export const MuiAutoComplete = () => {
     return (
         <Stack spacing={2} width='250px'>
             <Autocomplete
-                renderInput={(params) => <TextField {...params} placeholder='Choose your skill'/>}
+                renderInput={(params) => <TextField {...params} label='Skills' placeholder='Choose your skill'/>}
                 options={skills}
                 value={value}
-                onChange={(event: any, newValue: string | null) => setValue(newValue)}
+                onChange={(_event: any, newValue: string | null) => setValue(newValue)}
                 freeSolo
             />
 
             <Autocomplete
-                renderInput={(params) => <TextField {...params} placeholder='Choose your skill'/>}
+                renderInput={(params) => <TextField {...params} label='Skills' placeholder='Choose your skill'/>}
                 options={skillOptions}
                 value={skill}
-                onChange={(event: any, newValue: string | null) => setSkill(newValue)}
+                onChange={(_event: any, newValue: Skill | null) => setSkill(newValue)}
                 freeSolo
             />
         </Stack>
