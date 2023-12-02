@@ -1,6 +1,9 @@
 import {Box, Button, Stack} from '@mui/material'
 import {
-    CheckBoxRounded, Collections,
+    CheckBoxRounded,
+    Collections,
+    LaunchRounded,
+    MenuRounded,
     RadioButtonCheckedTwoTone,
     SelectAllRounded,
     SmartButtonRounded,
@@ -10,6 +13,7 @@ import {
     ToggleOnRounded
 } from '@mui/icons-material'
 import {Link} from 'react-router-dom'
+import './App.css'
 
 export const Home = () => {
     return (
@@ -68,6 +72,20 @@ export const Home = () => {
                 <Stack spacing={4} direction='row'>
                     <Link to='/images'>
                         <Button variant='contained' color='success' sx={{marginBottom: '16px'}} startIcon={<Collections/>}>MUI Image List</Button>
+                    </Link>
+                    <Link to='/navbar-menu'>
+                        <Button variant='outlined' color='primary' sx={{marginBottom: '16px'}}>MUI Navbar</Button>
+                    </Link>
+                    <Link to='/link'>
+                        <Button variant='contained' color='warning' startIcon={<LaunchRounded/>}
+                                sx={{marginBottom: '16px'}}>MUI Link</Button>
+                    </Link>
+                    <Link to='/breadcrumbs'>
+                        <Button variant='outlined' color='info' sx={{marginBottom: '16px'}}>MUI Breadcrumbs</Button>
+                    </Link>
+                    <Link to='/drawer'>
+                        <Button variant='contained' color='error' startIcon={<MenuRounded/>}
+                                sx={{marginBottom: '16px'}}>MUI Drawer</Button>
                     </Link>
                 </Stack>
             </Stack>

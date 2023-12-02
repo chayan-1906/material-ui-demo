@@ -1,8 +1,16 @@
-import {InputAdornment, Stack, TextField} from '@mui/material';
-import {useState} from 'react';
+import {Box, InputAdornment, Stack, styled, TextField} from '@mui/material'
+import {useCallback, useState} from 'react'
+
+const StyledWrapper = styled(Box)((_) => ({
+    display: 'flex',
+}))
 
 export const MuiTextField = () => {
     const [value, setValue] = useState('')
+
+    const handleInputChange = useCallback((e: any) => {
+        setValue(e.target.value)
+    }, [])
 
     return (
         <Stack spacing={4}>
@@ -16,13 +24,24 @@ export const MuiTextField = () => {
                 <TextField label='Small secondary' size='small' color='secondary'/>
             </Stack>
 
-            <Stack direction='row' spacing={2}>
-                <TextField label='Form Input' value={value} onChange={(e) => setValue(e.target.value)} required
-                           error={!value} helperText={!value ? 'Required' : 'Do not share your password with anyone'}/>
-                <TextField label='Password' type='password' helperText='Do not share your password with anyone'
-                           disabled/>
+            {/*<Stack direction='row' spacing={2}>*/}
+            <StyledWrapper>
+                <TextField
+                    label='Form Input'
+                    value={value}
+                    onChange={handleInputChange}
+                    required
+                    error={!value}
+                    helperText={!value ? 'Required' : 'Do not share your password with anyone'}
+                />
+                <TextField
+                    label='Password'
+                    type='password'
+                    helperText='Do not share your password with anyone'
+                    disabled
+                />
                 <TextField label='Read Only' InputProps={{readOnly: true}}/>
-            </Stack>
+            </StyledWrapper>
 
             <Stack direction='row' spacing={2}>
                 <TextField label='Amount' InputProps={{
