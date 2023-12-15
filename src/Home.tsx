@@ -1,5 +1,6 @@
-import {Box, Button, Stack} from '@mui/material'
+import {Box, Button, Link, Stack} from '@mui/material'
 import {
+    BadgeTwoTone,
     CheckBoxRounded,
     Collections,
     LaunchRounded,
@@ -17,7 +18,7 @@ import './App.css'
 
 export const Home = () => {
     return (
-        <Box display='flex' justifyContent='center'>
+        <Box display='flex' justifyContent='center' p={4}>
             <Stack>
                 <Stack spacing={4} direction='row'>
                     <Link to='/typography'>
@@ -86,6 +87,23 @@ export const Home = () => {
                     <Link to='/drawer'>
                         <Button variant='contained' color='error' startIcon={<MenuRounded/>}
                                 sx={{marginBottom: '16px'}}>MUI Drawer</Button>
+                    </Link>
+                    <Link to='/bottom-navbar'>
+                        <Button variant='contained' color='secondary' sx={{marginBottom: '16px'}}>MUI Bottom
+                            Navbar</Button>
+                    </Link>
+                </Stack>
+
+                <Stack spacing={4} direction='row'>
+                    <Link to='/avatar'>
+                        <Button variant='outlined' color='success' sx={{marginBottom: '16px'}}>MUI Avatar</Button>
+                    </Link>
+                    <Link to='/badge'>
+                        <Button variant='contained' color='primary' startIcon={<BadgeTwoTone/>}
+                                sx={{marginBottom: '16px'}}>Mui Badge</Button>
+                    </Link>
+                    <Link to='/list'>
+                        <Button variant='outlined' color='warning' sx={{marginBottom: '16px'}}>MUI List</Button>
                     </Link>
                 </Stack>
             </Stack>

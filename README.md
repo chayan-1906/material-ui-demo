@@ -73,16 +73,28 @@ https://github.com/gopinav/React-MUI-Tutorials/tree/master/react-mui-demo
     <tr>
         <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/286bde67-a5b6-45a0-9091-59619e40e5a5" alt="MUI Image List" width="500px"></td>
     </tr>
-<tr>
+    <tr>
         <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/d65b3b95-8278-44b2-8681-e33adfd56799" alt="MUI Navbar/Menu" width="500px"></td>
     </tr>
-<tr>
+    <tr>
         <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/4159db3b-e0d3-444c-9e02-81282ab13d0a" alt="MUI Link" width="500px"></td>
     </tr>
-<tr>
+    <tr>
         <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/46d19b4c-dbe8-4768-9db6-c346156db627" alt="MUI Breadcrumbs" width="500px"></td>
     </tr>
-<tr>
+    <tr>
         <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/cc55e22c-8a93-41f8-a93b-2097ce20680d" alt="MUI Drawer" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/c71ebeab-daba-4780-952d-6d12b72842bf" alt="MUI Bottom Navbar" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/8a433e19-70f0-4d1b-85da-0c3a23815d03" alt="MUI Avatar" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/930d64f9-c76f-4b8f-8643-773eaf450e72" alt="MUI Badge" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/57d390f4-0415-4ad4-9f6f-33785967bb84" alt="MUI List" width="500px"></td>
     </tr>
 </table>

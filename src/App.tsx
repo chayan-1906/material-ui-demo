@@ -16,9 +16,13 @@ import {MuiAccordion} from './components/MuiAccordion.tsx'
 import {MuiImageList} from './components/MuiImageList.tsx'
 import {MuiNavbarMenu} from './components/MuiNavbarMenu.tsx'
 import {Box} from '@mui/material'
-import {MuiLink} from "./components/MuiLink.tsx";
-import {MuiBreadcrumbs} from "./components/MuiBreadcrumbs.tsx";
-import {MuiDrawer} from "./components/MuiDrawer.tsx";
+import {MuiLink} from './components/MuiLink.tsx'
+import {MuiBreadcrumbs} from './components/MuiBreadcrumbs.tsx'
+import {MuiDrawer} from './components/MuiDrawer.tsx'
+import {MuiBottomNavbar} from "./components/MuiBottomNavbar.tsx";
+import {MuiAvatar} from "./components/MuiAvatar.tsx";
+import {MuiBadge} from "./components/MuiBadge.tsx";
+import {MuiList} from "./components/MuiList.tsx";
 
 function App() {
     return (
@@ -43,6 +47,10 @@ function App() {
                     <Route path='/link' element={<MuiLink/>}/>
                     <Route path='/breadcrumbs' element={<MuiBreadcrumbs/>}/>
                     <Route path='/drawer' element={<MuiDrawer/>}/>
+                    <Route path='/bottom-navbar' element={<MuiBottomNavbar/>}/>
+                    <Route path='/avatar' element={<MuiAvatar/>}/>
+                    <Route path='/badge' element={<MuiBadge/>}/>
+                    <Route path='/list' element={<MuiList/>}/>
                     <Route path='*' element={<Navigate to='/' replace/>}/>
                 </Routes>
             </BrowserRouter>
