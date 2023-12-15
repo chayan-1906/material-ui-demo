@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import {Box, Button, Link, Stack} from '@mui/material'
 import {
     BadgeTwoTone,
@@ -13,7 +14,6 @@ import {
     Textsms,
     ToggleOnRounded
 } from '@mui/icons-material'
-import {Link} from 'react-router-dom'
 import './App.css'
 
 export const Home = () => {
