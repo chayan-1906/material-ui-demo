@@ -19,10 +19,14 @@ import {Box} from '@mui/material'
 import {MuiLink} from './components/MuiLink.tsx'
 import {MuiBreadcrumbs} from './components/MuiBreadcrumbs.tsx'
 import {MuiDrawer} from './components/MuiDrawer.tsx'
-import {MuiBottomNavbar} from "./components/MuiBottomNavbar.tsx";
-import {MuiAvatar} from "./components/MuiAvatar.tsx";
-import {MuiBadge} from "./components/MuiBadge.tsx";
-import {MuiList} from "./components/MuiList.tsx";
+import {MuiBottomNavbar} from './components/MuiBottomNavbar.tsx'
+import {MuiAvatar} from './components/MuiAvatar.tsx'
+import {MuiBadge} from './components/MuiBadge.tsx'
+import {MuiList} from './components/MuiList.tsx'
+import {MuiChip} from './components/MuiChip.tsx'
+import {MuiTooltip} from './components/MuiTooltip.tsx'
+import {MuiTable} from "./components/MuiTable.tsx";
+import {MuiAlert} from "./components/MuiAlert.tsx";
 
 function App() {
     return (
@@ -51,6 +55,15 @@ function App() {
                     <Route path='/avatar' element={<MuiAvatar/>}/>
                     <Route path='/badge' element={<MuiBadge/>}/>
                     <Route path='/list' element={<MuiList/>}/>
+                    <Route path='/chip' element={<MuiChip/>}/>
+                    <Route path='/tooltip' element={<MuiTooltip/>}/>
+                    <Route path='/table' element={<MuiTable/>}/>
+                    <Route path='/alert' element={<MuiAlert/>}/>
+                    <Route path='/snackbar' element={<MuiAlert/>}/>
+                    <Route path='/dialog' element={<MuiAlert/>}/>
+                    <Route path='/progress' element={<MuiAlert/>}/>
+                    <Route path='/skeleton' element={<MuiAlert/>}/>
+                    <Route path='/loading-button' element={<MuiAlert/>}/>
                     <Route path='*' element={<Navigate to='/' replace/>}/>
                 </Routes>
             </BrowserRouter>

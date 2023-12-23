@@ -97,4 +97,19 @@ https://github.com/gopinav/React-MUI-Tutorials/tree/master/react-mui-demo
     <tr>
         <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/57d390f4-0415-4ad4-9f6f-33785967bb84" alt="MUI List" width="500px"></td>
     </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/65cc31b5-a8df-4aed-bb50-18bb4eb51f95" alt="MUI Chip" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/5346c062-1dd5-4fae-b278-3fce30c9c29d" alt="MUI Tooltip" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/f1ade673-6dd5-45f7-b082-4f8a3c4bff99" alt="MUI Table" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/0724910b-a891-44fd-b655-1a2988544ae0" alt="MUI Alert" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="" alt="MUI Snackbar" width="500px"></td>
+    </tr>
 </table>

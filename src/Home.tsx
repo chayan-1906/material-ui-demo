@@ -1,6 +1,8 @@
 import {Link} from 'react-router-dom'
 import {Box, Button, Stack} from '@mui/material'
 import {
+    AccountCircleRounded,
+    AddAlertRounded,
     BadgeTwoTone,
     CheckBoxRounded,
     Collections,
@@ -10,9 +12,11 @@ import {
     SelectAllRounded,
     SmartButtonRounded,
     Stars,
+    TableViewRounded,
     TextFieldsRounded,
     Textsms,
-    ToggleOnRounded
+    ToggleOnRounded,
+    ViewListRounded
 } from '@mui/icons-material'
 import './App.css'
 
@@ -94,16 +98,51 @@ export const Home = () => {
                     </Link>
                 </Stack>
 
-                <Stack spacing={4} direction='row'>
+                <Stack spacing={8} direction='row'>
                     <Link to='/avatar'>
-                        <Button variant='outlined' color='success' sx={{marginBottom: '16px'}}>MUI Avatar</Button>
+                        <Button variant='outlined' color='success' sx={{marginBottom: '16px'}}
+                                startIcon={<AccountCircleRounded/>}>MUI Avatar</Button>
                     </Link>
                     <Link to='/badge'>
                         <Button variant='contained' color='primary' startIcon={<BadgeTwoTone/>}
                                 sx={{marginBottom: '16px'}}>Mui Badge</Button>
                     </Link>
                     <Link to='/list'>
-                        <Button variant='outlined' color='warning' sx={{marginBottom: '16px'}}>MUI List</Button>
+                        <Button variant='outlined' color='warning' sx={{marginBottom: '16px'}}
+                                startIcon={<ViewListRounded/>}>MUI List</Button>
+                    </Link>
+                    <Link to='/chip'>
+                        <Button variant='contained' color='info' sx={{marginBottom: '16px'}}>MUI Chip</Button>
+                    </Link>
+                    <Link to='/tooltip'>
+                        <Button variant='outlined' color='error' sx={{marginBottom: '16px'}}>MUI Tooltip</Button>
+                    </Link>
+                    <Link to='/table'>
+                        <Button variant='contained' color='secondary' sx={{marginBottom: '16px'}}
+                                startIcon={<TableViewRounded/>}>MUI TABLE</Button>
+                    </Link>
+                </Stack>
+
+                <Stack spacing={4} direction='row'>
+                    <Link to='/alert'>
+                        <Button variant='contained' color='success' sx={{marginBottom: '16px'}}
+                                startIcon={<AddAlertRounded/>}>MUI Alert</Button>
+                    </Link>
+                    <Link to='/snackbar'>
+                        <Button variant='outlined' color='primary' sx={{marginBottom: '16px'}}>MUI Snackbar</Button>
+                    </Link>
+                    <Link to='/dialog'>
+                        <Button variant='contained' color='warning' sx={{marginBottom: '16px'}}>MUI Dialog</Button>
+                    </Link>
+                    <Link to='/progress'>
+                        <Button variant='outlined' color='info' sx={{marginBottom: '16px'}}>MUI Progress</Button>
+                    </Link>
+                    <Link to='/skeleton'>
+                        <Button variant='contained' color='error' sx={{marginBottom: '16px'}}>MUI Skeleton</Button>
+                    </Link>
+                    <Link to='/loading-button'>
+                        <Button variant='contained' color='secondary' sx={{marginBottom: '16px'}}>MUI Loading
+                            Button</Button>
                     </Link>
                 </Stack>
             </Stack>
