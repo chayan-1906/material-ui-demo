@@ -110,6 +110,21 @@ https://github.com/gopinav/React-MUI-Tutorials/tree/master/react-mui-demo
         <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/0724910b-a891-44fd-b655-1a2988544ae0" alt="MUI Alert" width="500px"></td>
     </tr>
     <tr>
-        <td><img src="" alt="MUI Snackbar" width="500px"></td>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/d8c0c400-981c-4598-846a-813e19c49e2e" alt="MUI Snackbar" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/b5d08076-9fe1-4958-af4a-9a22215e6062" alt="MUI Dialog" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/4f0cace9-6ee5-42be-b403-7979525434be" alt="MUI Progress" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/7a4ffd16-013c-411a-81c4-15e2911eb4dc" alt="MUI Skeleton" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/f768a53c-445d-4a08-921c-9d967f147d38" alt="MUI Loading Button" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="" alt="MUI Date and Time Picker" width="500px"></td>
     </tr>
 </table>

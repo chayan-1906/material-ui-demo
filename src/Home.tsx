@@ -3,7 +3,7 @@ import {Box, Button, Stack} from '@mui/material'
 import {
     AccountCircleRounded,
     AddAlertRounded,
-    BadgeTwoTone,
+    BadgeTwoTone, CalendarMonthRounded,
     CheckBoxRounded,
     Collections,
     LaunchRounded,
@@ -119,7 +119,7 @@ export const Home = () => {
                     </Link>
                     <Link to='/table'>
                         <Button variant='contained' color='secondary' sx={{marginBottom: '16px'}}
-                                startIcon={<TableViewRounded/>}>MUI TABLE</Button>
+                                startIcon={<TableViewRounded/>}>MUI Table</Button>
                     </Link>
                 </Stack>
 
@@ -143,6 +143,31 @@ export const Home = () => {
                     <Link to='/loading-button'>
                         <Button variant='contained' color='secondary' sx={{marginBottom: '16px'}}>MUI Loading
                             Button</Button>
+                    </Link>
+                </Stack>
+
+                <Stack spacing={8} direction='row'>
+                    <Link to='/date-time-picker'>
+                        <Button variant='outlined' color='success' sx={{marginBottom: '16px'}}
+                                startIcon={<CalendarMonthRounded/>}>Mui Date Time Picker</Button>
+                    </Link>
+                    <Link to='/'>
+                        <Button variant='contained' color='primary' startIcon={<BadgeTwoTone/>}
+                                sx={{marginBottom: '16px'}}>Mui Badge???</Button>
+                    </Link>
+                    <Link to='/'>
+                        <Button variant='outlined' color='warning' sx={{marginBottom: '16px'}}
+                                startIcon={<ViewListRounded/>}>MUI List???</Button>
+                    </Link>
+                    <Link to='/'>
+                        <Button variant='contained' color='info' sx={{marginBottom: '16px'}}>MUI Chip???</Button>
+                    </Link>
+                    <Link to='/'>
+                        <Button variant='outlined' color='error' sx={{marginBottom: '16px'}}>MUI Tooltip???</Button>
+                    </Link>
+                    <Link to='/'>
+                        <Button variant='contained' color='secondary' sx={{marginBottom: '16px'}}
+                                startIcon={<TableViewRounded/>}>MUI TABLE???</Button>
                     </Link>
                 </Stack>
             </Stack>

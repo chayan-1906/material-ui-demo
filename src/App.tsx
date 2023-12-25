@@ -25,8 +25,13 @@ import {MuiBadge} from './components/MuiBadge.tsx'
 import {MuiList} from './components/MuiList.tsx'
 import {MuiChip} from './components/MuiChip.tsx'
 import {MuiTooltip} from './components/MuiTooltip.tsx'
-import {MuiTable} from "./components/MuiTable.tsx";
-import {MuiAlert} from "./components/MuiAlert.tsx";
+import {MuiTable} from './components/MuiTable.tsx'
+import {MuiAlert} from './components/MuiAlert.tsx'
+import {MuiSkeleton} from "./components/MuiSkeleton.tsx";
+import {MuiLoadingButton} from "./components/MuiLoadingButton.tsx";
+import {MuiProgress} from "./components/MuiProgress.tsx";
+import {MuiDialog} from "./components/MuiDialog.tsx";
+import {MuiSnackbar} from "./components/MuiSnackbar.tsx";
 
 function App() {
     return (
@@ -59,11 +64,12 @@ function App() {
                     <Route path='/tooltip' element={<MuiTooltip/>}/>
                     <Route path='/table' element={<MuiTable/>}/>
                     <Route path='/alert' element={<MuiAlert/>}/>
-                    <Route path='/snackbar' element={<MuiAlert/>}/>
-                    <Route path='/dialog' element={<MuiAlert/>}/>
-                    <Route path='/progress' element={<MuiAlert/>}/>
-                    <Route path='/skeleton' element={<MuiAlert/>}/>
-                    <Route path='/loading-button' element={<MuiAlert/>}/>
+                    <Route path='/snackbar' element={<MuiSnackbar/>}/>
+                    <Route path='/dialog' element={<MuiDialog/>}/>
+                    <Route path='/progress' element={<MuiProgress/>}/>
+                    <Route path='/skeleton' element={<MuiSkeleton/>}/>
+                    <Route path='/loading-button' element={<MuiLoadingButton/>}/>
+                    <Route path='/date-time-picker' element={<MuiLoadingButton/>}/>
                     <Route path='*' element={<Navigate to='/' replace/>}/>
                 </Routes>
             </BrowserRouter>
