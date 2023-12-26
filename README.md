@@ -125,6 +125,9 @@ https://github.com/gopinav/React-MUI-Tutorials/tree/master/react-mui-demo
         <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/f768a53c-445d-4a08-921c-9d967f147d38" alt="MUI Loading Button" width="500px"></td>
     </tr>
     <tr>
-        <td><img src="" alt="MUI Date and Time Picker" width="500px"></td>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/c7655b0b-b256-41a0-859c-c51cb7ce25ed" alt="MUI Date, Time & Date Range Picker" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/58515eb4-ff72-4500-827a-6d8887d3be33" alt="MUI Tabs" width="500px"></td>
     </tr>
 </table>

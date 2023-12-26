@@ -1,9 +1,10 @@
 import {Link} from 'react-router-dom'
-import {Box, Button, Stack} from '@mui/material'
+import {Box, Button,  Stack} from '@mui/material'
 import {
     AccountCircleRounded,
     AddAlertRounded,
-    BadgeTwoTone, CalendarMonthRounded,
+    BadgeTwoTone,
+    CalendarMonthRounded,
     CheckBoxRounded,
     Collections,
     LaunchRounded,
@@ -149,11 +150,10 @@ export const Home = () => {
                 <Stack spacing={8} direction='row'>
                     <Link to='/date-time-picker'>
                         <Button variant='outlined' color='success' sx={{marginBottom: '16px'}}
-                                startIcon={<CalendarMonthRounded/>}>Mui Date Time Picker</Button>
+                                startIcon={<CalendarMonthRounded/>}>Mui Date Time DateRange Picker</Button>
                     </Link>
-                    <Link to='/'>
-                        <Button variant='contained' color='primary' startIcon={<BadgeTwoTone/>}
-                                sx={{marginBottom: '16px'}}>Mui Badge???</Button>
+                    <Link to='/tabs'>
+                        <Button variant='contained' color='primary' sx={{marginBottom: '16px'}}>Mui Tabs</Button>
                     </Link>
                     <Link to='/'>
                         <Button variant='outlined' color='warning' sx={{marginBottom: '16px'}}

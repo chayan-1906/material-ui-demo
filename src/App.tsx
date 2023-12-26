@@ -27,14 +27,19 @@ import {MuiChip} from './components/MuiChip.tsx'
 import {MuiTooltip} from './components/MuiTooltip.tsx'
 import {MuiTable} from './components/MuiTable.tsx'
 import {MuiAlert} from './components/MuiAlert.tsx'
-import {MuiSkeleton} from "./components/MuiSkeleton.tsx";
-import {MuiLoadingButton} from "./components/MuiLoadingButton.tsx";
-import {MuiProgress} from "./components/MuiProgress.tsx";
-import {MuiDialog} from "./components/MuiDialog.tsx";
-import {MuiSnackbar} from "./components/MuiSnackbar.tsx";
+import {MuiSkeleton} from './components/MuiSkeleton.tsx'
+import {MuiLoadingButton} from './components/MuiLoadingButton.tsx'
+import {MuiProgress} from './components/MuiProgress.tsx'
+import {MuiDialog} from './components/MuiDialog.tsx'
+import {MuiSnackbar} from './components/MuiSnackbar.tsx'
+import {MuiDateTimePicker} from "./components/MuiDateTimePicker.tsx";
+import {LocalizationProvider} from '@mui/x-date-pickers/LocalizationProvider'
+import {AdapterDayjs} from '@mui/x-date-pickers/AdapterDayjs'
+import {MuiTabs} from "./components/MuiTabs.tsx";
 
 function App() {
     return (
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
         <Box className='App'>
             <BrowserRouter>
                 <Routes>
@@ -69,11 +74,13 @@ function App() {
                     <Route path='/progress' element={<MuiProgress/>}/>
                     <Route path='/skeleton' element={<MuiSkeleton/>}/>
                     <Route path='/loading-button' element={<MuiLoadingButton/>}/>
-                    <Route path='/date-time-picker' element={<MuiLoadingButton/>}/>
+                    <Route path='/date-time-picker' element={<MuiDateTimePicker/>}/>
+                    <Route path='/tabs' element={<MuiTabs/>}/>
                     <Route path='*' element={<Navigate to='/' replace/>}/>
                 </Routes>
             </BrowserRouter>
         </Box>
+        </LocalizationProvider>
     )
 }
 
