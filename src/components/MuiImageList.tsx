@@ -1,4 +1,4 @@
-import {Box, ImageList, ImageListItem, ImageListItemBar, Stack} from "@mui/material";
+import {Box, ImageList, ImageListItem, ImageListItemBar, Stack} from '@mui/material'
 
 const itemData = [
     {

@@ -1,6 +1,6 @@
 import {AppBar, Button, IconButton, Menu, MenuItem, Stack, Toolbar, Typography} from '@mui/material'
 import {CatchingPokemonRounded, KeyboardArrowDown} from '@mui/icons-material'
-import React, {useState} from "react";
+import React, {useState} from 'react'
 
 export const MuiNavbarMenu = () => {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)

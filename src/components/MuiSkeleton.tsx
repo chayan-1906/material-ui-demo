@@ -8,7 +8,7 @@ export const MuiSkeleton = () => {
         setTimeout(() => {
             setLoading(false)
         }, 3000)
-    }, []);
+    }, [])
 
     return (
         <Stack p={4} spacing={1} width='250px'>

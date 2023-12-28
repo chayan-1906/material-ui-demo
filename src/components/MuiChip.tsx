@@ -1,6 +1,6 @@
-import {Avatar, Chip, Stack} from "@mui/material";
-import {Face2} from "@mui/icons-material";
-import {useState} from "react";
+import {Avatar, Chip, Stack} from '@mui/material'
+import {Face2} from '@mui/icons-material'
+import {useState} from 'react'
 
 export const MuiChip = () => {
     const [chips, setChips] = useState(['Chip 1', 'Chip 2', 'Chip 3'])

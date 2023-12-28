@@ -1,6 +1,6 @@
-import {BottomNavigation, BottomNavigationAction} from "@mui/material";
-import {FavoriteRounded, HomeRounded, PersonRounded} from "@mui/icons-material";
-import {useState} from "react";
+import {BottomNavigation, BottomNavigationAction} from '@mui/material'
+import {FavoriteRounded, HomeRounded, PersonRounded} from '@mui/icons-material'
+import {useState} from 'react'
 
 export const MuiBottomNavbar = () => {
     const [value, setValue] = useState(0)

@@ -1,5 +1,5 @@
-import {Box, MenuItem, TextField} from '@mui/material';
-import {ChangeEvent, useState} from 'react';
+import {Box, MenuItem, TextField} from '@mui/material'
+import {ChangeEvent, useState} from 'react'
 
 export const MuiSelect = () => {
     const [selectedCountries, setSelectedCountries] = useState<string[]>([])

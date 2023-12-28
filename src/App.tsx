@@ -32,10 +32,12 @@ import {MuiLoadingButton} from './components/MuiLoadingButton.tsx'
 import {MuiProgress} from './components/MuiProgress.tsx'
 import {MuiDialog} from './components/MuiDialog.tsx'
 import {MuiSnackbar} from './components/MuiSnackbar.tsx'
-import {MuiDateTimePicker} from "./components/MuiDateTimePicker.tsx";
+import {MuiDateTimePicker} from './components/MuiDateTimePicker.tsx'
 import {LocalizationProvider} from '@mui/x-date-pickers/LocalizationProvider'
 import {AdapterDayjs} from '@mui/x-date-pickers/AdapterDayjs'
-import {MuiTabs} from "./components/MuiTabs.tsx";
+import {MuiTabs} from './components/MuiTabs.tsx'
+import {MuiTimeline} from './components/MuiTimeline.tsx'
+import {MuiMasonry} from './components/MuiMasonry.tsx'
 
 function App() {
     return (
@@ -76,6 +78,10 @@ function App() {
                     <Route path='/loading-button' element={<MuiLoadingButton/>}/>
                     <Route path='/date-time-picker' element={<MuiDateTimePicker/>}/>
                     <Route path='/tabs' element={<MuiTabs/>}/>
+                    <Route path='/timeline' element={<MuiTimeline/>}/>
+                    <Route path='/masonry' element={<MuiMasonry/>}/>
+                    <Route path='/responsiveness' element={<MuiTabs/>}/>
+                    <Route path='/theming' element={<MuiTabs/>}/>
                     <Route path='*' element={<Navigate to='/' replace/>}/>
                 </Routes>
             </BrowserRouter>

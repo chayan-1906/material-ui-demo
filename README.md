@@ -130,4 +130,10 @@ https://github.com/gopinav/React-MUI-Tutorials/tree/master/react-mui-demo
     <tr>
         <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/58515eb4-ff72-4500-827a-6d8887d3be33" alt="MUI Tabs" width="500px"></td>
     </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/376ea756-10aa-4f93-a44e-f7a295924787" alt="MUI Timeline" width="500px"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/chayan-1906/material-ui-demo/assets/82430454/111676b6-9a0b-48e1-a89d-99ed00478093" alt="MUI Masonry" width="500px"></td>
+    </tr>
 </table>

@@ -1,5 +1,5 @@
-import {Box, Breadcrumbs, Link, Typography} from "@mui/material";
-import {NavigateNextRounded} from "@mui/icons-material";
+import {Box, Breadcrumbs, Link, Typography} from '@mui/material'
+import {NavigateNextRounded} from '@mui/icons-material'
 
 export const MuiBreadcrumbs = () => {
     return (

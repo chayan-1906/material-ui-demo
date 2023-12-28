@@ -1,6 +1,6 @@
-import {Box, Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel} from '@mui/material';
-import {ChangeEvent, useState} from 'react';
-import {Bookmark, BookmarkBorder} from '@mui/icons-material';
+import {Box, Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel} from '@mui/material'
+import {ChangeEvent, useState} from 'react'
+import {Bookmark, BookmarkBorder} from '@mui/icons-material'
 
 export const MuiCheckbox = () => {
     const [acceptTnC, setAcceptTnC] = useState(false)

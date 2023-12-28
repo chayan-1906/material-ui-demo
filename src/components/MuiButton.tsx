@@ -1,7 +1,7 @@
-import {Button, ButtonGroup, IconButton, Stack, ToggleButton, ToggleButtonGroup} from '@mui/material';
-import SendIcon from '@mui/icons-material/Send';
-import React, {useState} from 'react';
-import {FormatBoldRounded, FormatItalicRounded, FormatUnderlinedRounded} from '@mui/icons-material';
+import {Button, ButtonGroup, IconButton, Stack, ToggleButton, ToggleButtonGroup} from '@mui/material'
+import SendIcon from '@mui/icons-material/Send'
+import React, {useState} from 'react'
+import {FormatBoldRounded, FormatItalicRounded, FormatUnderlinedRounded} from '@mui/icons-material'
 
 export const MuiButton = () => {
     const [formats, setFormats] = useState<string[]>([])

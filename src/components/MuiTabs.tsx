@@ -1,7 +1,7 @@
 import {Box, Stack, Tab} from '@mui/material'
 import {TabContext, TabList, TabPanel} from '@mui/lab'
 import {useState} from 'react'
-import {FavoriteRounded} from "@mui/icons-material";
+import {FavoriteRounded} from '@mui/icons-material'
 
 export const MuiTabs = () => {
     const [activeTab, setActiveTab] = useState('1')

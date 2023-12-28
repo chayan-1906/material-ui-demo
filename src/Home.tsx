@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import {Box, Button,  Stack} from '@mui/material'
+import {Box, Button, Stack} from '@mui/material'
 import {
     AccountCircleRounded,
     AddAlertRounded,
@@ -155,19 +155,19 @@ export const Home = () => {
                     <Link to='/tabs'>
                         <Button variant='contained' color='primary' sx={{marginBottom: '16px'}}>Mui Tabs</Button>
                     </Link>
-                    <Link to='/'>
+                    <Link to='/timeline'>
                         <Button variant='outlined' color='warning' sx={{marginBottom: '16px'}}
-                                startIcon={<ViewListRounded/>}>MUI List???</Button>
+                                startIcon={<ViewListRounded/>}>MUI Timeline</Button>
                     </Link>
-                    <Link to='/'>
-                        <Button variant='contained' color='info' sx={{marginBottom: '16px'}}>MUI Chip???</Button>
+                    <Link to='/masonry'>
+                        <Button variant='contained' color='info' sx={{marginBottom: '16px'}}>MUI Masonry</Button>
                     </Link>
-                    <Link to='/'>
-                        <Button variant='outlined' color='error' sx={{marginBottom: '16px'}}>MUI Tooltip???</Button>
+                    <Link to='/responsiveness'>
+                        <Button variant='outlined' color='error' sx={{marginBottom: '16px'}}>MUI Responsiveness</Button>
                     </Link>
-                    <Link to='/'>
+                    <Link to='/theming'>
                         <Button variant='contained' color='secondary' sx={{marginBottom: '16px'}}
-                                startIcon={<TableViewRounded/>}>MUI TABLE???</Button>
+                                startIcon={<TableViewRounded/>}>MUI Theming</Button>
                     </Link>
                 </Stack>
             </Stack>
