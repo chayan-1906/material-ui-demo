@@ -13,7 +13,7 @@ export const MuiTextField = () => {
     }, [])
 
     return (
-        <Stack spacing={4}>
+        <Stack p={4} spacing={4}>
             <Stack direction='row' spacing={2}>
                 <TextField label='Name' variant='outlined'/>
                 <TextField label='Name' variant='filled'/>

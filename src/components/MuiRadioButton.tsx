@@ -1,4 +1,4 @@
-import {Box, FormControl, FormControlLabel, FormHelperText, FormLabel, Radio, RadioGroup} from '@mui/material'
+import {FormControl, FormControlLabel, FormHelperText, FormLabel, Radio, RadioGroup, Stack} from '@mui/material'
 import {ChangeEvent, useState} from 'react'
 
 export const MuiRadioButton = () => {
@@ -10,7 +10,7 @@ export const MuiRadioButton = () => {
     }
 
     return (
-        <Box>
+        <Stack p={4}>
             <FormControl error>
                 <FormLabel id='job-experience-group-label'>Years of experience</FormLabel>
                 <RadioGroup name='job-experience-group' aria-labelledby='job-experience-group-label'
@@ -23,6 +23,6 @@ export const MuiRadioButton = () => {
                 </RadioGroup>
                 <FormHelperText>Invalid Selection</FormHelperText>
             </FormControl>
-        </Box>
+        </Stack>
     )
 }

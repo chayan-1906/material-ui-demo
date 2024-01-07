@@ -11,7 +11,7 @@ export const MuiRating = () => {
     }
 
     return (
-        <Stack spacing={2} width='200px'>
+        <Stack p={4} spacing={2}>
             <Rating value={value} onChange={handleChange} precision={0.5} size='large'
                     icon={<FavoriteRounded fontSize='inherit' color='error'/>}
                     emptyIcon={<FavoriteBorderRounded fontSize='inherit'/>}

@@ -1,4 +1,4 @@
-import {Box, Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel} from '@mui/material'
+import {Box, Checkbox, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, Stack} from '@mui/material'
 import {ChangeEvent, useState} from 'react'
 import {Bookmark, BookmarkBorder} from '@mui/icons-material'
 
@@ -23,7 +23,7 @@ export const MuiCheckbox = () => {
     }
 
     return (
-        <Box>
+        <Stack p={4}>
             <Box>
                 <FormControlLabel
                     control={<Checkbox size='small' color='secondary' checked={acceptTnC} onChange={handleChange}/>}
@@ -62,6 +62,6 @@ export const MuiCheckbox = () => {
                     <FormHelperText>Invalid selection</FormHelperText>
                 </FormControl>
             </Box>
-        </Box>
+        </Stack>
     )
 }

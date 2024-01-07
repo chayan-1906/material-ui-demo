@@ -2,7 +2,7 @@ import {Link, Stack, Typography} from '@mui/material'
 
 export const MuiLink = () => {
     return (
-        <Stack spacing={2} m={4} direction='row'>
+        <Stack spacing={2} p={4} direction='row'>
             <Typography variant='body2'>
                 <Link href='/#'>Link</Link>
             </Typography>

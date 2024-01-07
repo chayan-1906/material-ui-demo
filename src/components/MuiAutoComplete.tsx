@@ -18,7 +18,7 @@ export const MuiAutoComplete = () => {
     console.log({skill})
 
     return (
-        <Stack spacing={2} width='250px'>
+        <Stack p={4} spacing={2} width={300}>
             <Autocomplete
                 renderInput={(params) => <TextField {...params} label='Skills' placeholder='Choose your skill'/>}
                 options={skills}

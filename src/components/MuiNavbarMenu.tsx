@@ -1,8 +1,13 @@
-import {AppBar, Button, IconButton, Menu, MenuItem, Stack, Toolbar, Typography} from '@mui/material'
-import {CatchingPokemonRounded, KeyboardArrowDown} from '@mui/icons-material'
+import {AppBar, Avatar, Button, Menu, MenuItem, Stack, Toolbar, Typography} from '@mui/material'
+import {KeyboardArrowDown} from '@mui/icons-material'
 import React, {useState} from 'react'
+import Logo from '../assets/logo.png'
 
-export const MuiNavbarMenu = () => {
+interface MuiNavbarMenuProps {
+    title: string
+}
+
+export const MuiNavbarMenu: React.FC<MuiNavbarMenuProps> = ({title}) => {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
     const open = Boolean(anchorEl)
 
@@ -15,12 +20,13 @@ export const MuiNavbarMenu = () => {
     }
 
     return (
-        <AppBar position='static'>
+        <AppBar position='static' elevation={0} color='error'>
             <Toolbar>
-                <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
+                {/*<IconButton size='large' edge='start' color='inherit' aria-label='logo'>
                     <CatchingPokemonRounded/>
-                </IconButton>
-                <Typography variant='h6' component='div' sx={{flexGrow: '1'}}>POKEMON APP</Typography>
+                </IconButton>*/}
+                <Avatar src={Logo} alt='mui-logo' sx={{marginRight: '20px'}}/>
+                <Typography variant='h6' component='div' sx={{flexGrow: '1'}}>{title}</Typography>
                 <Stack spacing={2} direction='row'>
                     <Button color='inherit'>Features</Button>
                     <Button color='inherit'>Pricing</Button>
@@ -29,13 +35,13 @@ export const MuiNavbarMenu = () => {
                             aria-controls={open ? 'resources-menu' : undefined}
                             aria-haspopup='true'
                             aria-expanded={open ? 'true' : undefined}
-                            endIcon={<KeyboardArrowDown/>}
-                    >Resources</Button>
+                            endIcon={<KeyboardArrowDown/>}>
+                        Resources
+                    </Button>
                     <Button color='inherit'>Login</Button>
                 </Stack>
-                <Menu id='resources-menu' open={open} anchorEl={anchorEl} MenuListProps={{
-                    'aria-labelledby': 'resources-button',
-                }}
+                <Menu id='resources-menu' open={open} anchorEl={anchorEl}
+                      MenuListProps={{'aria-labelledby': 'resources-button'}}
                       onClose={handleClose}
                       anchorOrigin={{
                           vertical: 'bottom',

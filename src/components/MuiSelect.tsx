@@ -1,4 +1,4 @@
-import {Box, MenuItem, TextField} from '@mui/material'
+import {MenuItem, Stack, TextField} from '@mui/material'
 import {ChangeEvent, useState} from 'react'
 
 export const MuiSelect = () => {
@@ -12,7 +12,7 @@ export const MuiSelect = () => {
     console.log({selectedCountries})
 
     return (
-        <Box width='250px'>
+        <Stack p={4} width='250px'>
             <TextField label='Select country' select value={selectedCountries} onChange={handleChange} fullWidth
                        SelectProps={{
                            multiple: true
@@ -21,6 +21,6 @@ export const MuiSelect = () => {
                 <MenuItem value='US'>USA</MenuItem>
                 <MenuItem value='AU'>Australia</MenuItem>
             </TextField>
-        </Box>
+        </Stack>
     )
 }

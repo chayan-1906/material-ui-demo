@@ -155,7 +155,7 @@ const itemData3 = [
 
 export const MuiImageList = () => {
     return (
-        <Stack>
+        <Stack p={4}>
             <Stack spacing={4} direction='row'>
                 <ImageList sx={{width: 500, height: 450}} cols={3} rowHeight={164}>
                     {

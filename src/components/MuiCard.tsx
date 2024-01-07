@@ -1,8 +1,8 @@
-import {Box, Button, Card, CardActions, CardContent, CardMedia, Typography} from '@mui/material'
+import {Button, Card, CardActions, CardContent, CardMedia, Stack, Typography} from '@mui/material'
 
 export const MuiCard = () => {
     return (
-        <Box width='300px'>
+        <Stack p={4} width={300}>
             <Card>
                 <CardMedia component='img' height='140' image='https://source.unsplash.com/random'
                            alt='unsplash image'/>
@@ -20,6 +20,6 @@ export const MuiCard = () => {
                     <Button size='small'>Learn More</Button>
                 </CardActions>
             </Card>
-        </Box>
+        </Stack>
     )
 }

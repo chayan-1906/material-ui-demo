@@ -1,4 +1,4 @@
-import {Box, FormControl, FormControlLabel, Switch} from '@mui/material'
+import {FormControl, FormControlLabel, Stack, Switch} from '@mui/material'
 import {ChangeEvent, useState} from 'react'
 
 export const MuiSwitch = () => {
@@ -10,12 +10,12 @@ export const MuiSwitch = () => {
     }
 
     return (
-        <Box>
+        <Stack p={4}>
             <FormControl>
                 <FormControlLabel
                     control={<Switch color='secondary' size='small' checked={checked} onChange={handleChange}/>}
                     label='Dark Mode'/>
             </FormControl>
-        </Box>
+        </Stack>
     )
 }
