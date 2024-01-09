@@ -366,7 +366,7 @@ export const AttendanceDemo = () => {
                 <Button variant='contained' color='success' onClick={handleSubmitAttendance}>Submit Attendance</Button>
             </Stack>
             <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar}>
-                <SnackbarAlert onClose={handleCloseSnackbar} severity='success'>Form submitted
+                <SnackbarAlert onClose={handleCloseSnackbar} severity='success'>Attendance submitted
                     successfully!</SnackbarAlert>
             </Snackbar>
         </Stack>
