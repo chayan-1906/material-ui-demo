@@ -40,6 +40,7 @@ import {MuiTimeline} from './components/MuiTimeline.tsx'
 import {MuiMasonry} from './components/MuiMasonry.tsx'
 import MuiResponsiveness from './components/MuiResponsiveness.tsx'
 import SharedLayout from './SharedLayout.tsx'
+import {AttendanceDemo} from "./AttendanceDemo.tsx";
 
 const theme = createTheme(({
     status: {
@@ -63,6 +64,7 @@ function App() {
                 <Box className='App'>
                     <BrowserRouter>
                         <Routes>
+                            <Route path='/attendance' element={<AttendanceDemo/>}/>
                             <Route path='/' element={<SharedLayout/>}>
                                 <Route path='/' element={<Home/>}/>
                                 <Route path='/typography' element={<MuiTypography/>}/>
