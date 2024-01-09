@@ -1,7 +1,7 @@
 import {Alert, AlertProps, Button, Snackbar, Stack} from '@mui/material'
 import React, {forwardRef, useState} from 'react'
 
-const SnackbarAlert = forwardRef<HTMLDivElement, AlertProps>(
+export const SnackbarAlert = forwardRef<HTMLDivElement, AlertProps>(
     function SnackbarAlert(props, ref) {
         return (
             <Alert elevation={6} ref={ref} {...props}/>

@@ -1,6 +1,22 @@
-import {Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from '@mui/material'
+import {
+    Button,
+    Paper,
+    Snackbar,
+    Stack,
+    Table,
+    TableBody,
+    TableCell,
+    TableContainer,
+    TableHead,
+    TableRow,
+    Theme,
+    Typography,
+    useMediaQuery,
+    useTheme
+} from '@mui/material'
 import {CheckBox, CheckBoxOutlineBlankRounded} from '@mui/icons-material'
-import {useState} from "react";
+import {useState} from 'react'
+import {SnackbarAlert} from './components/MuiSnackbar.tsx'
 
 const tableData = [
     {
@@ -277,8 +293,12 @@ const tableData = [
 
 export const AttendanceDemo = () => {
     const [tableDataa, setTableDataa] = useState(tableData)
+    const [openSnackbar, setOpenSnackbar] = useState(false)
 
-    const handleisPresent = (index: number) => {
+    const theme = useTheme<Theme>()
+    const betweenXSSM = useMediaQuery(theme.breakpoints.between('xs', 'sm'))
+
+    const handleIsPresent = (index: number) => {
         const newData = [...tableDataa]
         newData[index] = {
             ...newData[index],
@@ -287,10 +307,21 @@ export const AttendanceDemo = () => {
         setTableDataa(newData)
     }
 
+    const handleSubmitAttendance = () => {
+        setOpenSnackbar(true)
+    }
+
+    const handleCloseSnackbar = () => {
+        setOpenSnackbar(false)
+    }
+
     return (
-        <Stack p={4}>
-            <TableContainer component={Paper} sx={{maxHeight: '90vh'}}>
-                <Table aria-label='simple table' stickyHeader>
+        <Stack p={betweenXSSM ? 0 : 1} bgcolor='white'>
+            <Typography variant={betweenXSSM ? 'h6' : 'h4'} fontWeight='bold' p={3} textAlign='center'>
+                Attendance for Class V(B)
+            </Typography>
+            <TableContainer component={Paper} sx={{maxHeight: betweenXSSM ? '86vh' : '78vh'}}>
+                <Table stickyHeader>
                     <TableHead>
                         <TableRow>
                             <TableCell></TableCell>
@@ -305,10 +336,14 @@ export const AttendanceDemo = () => {
                         {
                             tableDataa.map((tableDatum, index) => (
                                     <TableRow key={tableDatum.roll}
-                                              sx={{'&:last-child td, &:last-child th': {border: 0}, cursor: 'pointer'}}
+                                              sx={{
+                                                  backgroundColor: tableDatum.isPresent ? '#aaf0d1' : 'white',
+                                                  '&:last-child td, &:last-child th': {border: 0},
+                                                  cursor: 'pointer'
+                                              }}
                                               onClick={() => {
                                                   console.log(tableDatum.name)
-                                                  handleisPresent(index)
+                                                  handleIsPresent(index)
                                               }}>
                                         <TableCell>
                                             {
@@ -327,6 +362,13 @@ export const AttendanceDemo = () => {
                     </TableBody>
                 </Table>
             </TableContainer>
+            <Stack direction='row' justifyContent='end' m={1}>
+                <Button variant='contained' color='success' onClick={handleSubmitAttendance}>Submit Attendance</Button>
+            </Stack>
+            <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar}>
+                <SnackbarAlert onClose={handleCloseSnackbar} severity='success'>Form submitted
+                    successfully!</SnackbarAlert>
+            </Snackbar>
         </Stack>
     )
 }

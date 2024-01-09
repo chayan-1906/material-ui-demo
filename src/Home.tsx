@@ -271,6 +271,13 @@ const Home = () => {
                     MUI Responsiveness
                 </Button>
             )
+        },
+        {
+            path: '/attendance', component: () => (
+                <Button variant='outlined' color='error' sx={{marginBottom: '16px'}}>
+                    Attendance Demo
+                </Button>
+            )
         }
     ]
 
