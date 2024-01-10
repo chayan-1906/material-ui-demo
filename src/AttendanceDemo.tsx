@@ -9,6 +9,7 @@ import {
     TableContainer,
     TableHead,
     TableRow,
+    TextField,
     Theme,
     Typography,
     useMediaQuery,
@@ -26,6 +27,7 @@ const tableData = [
         'email': 'aswine0@google.fr',
         'gender': 'Male',
         'isPresent': true,
+        'comments': '',
         'ip_address': '5.184.208.200'
     },
     {
@@ -35,6 +37,7 @@ const tableData = [
         'email': 'hhelling1@scientificamerican.com',
         'gender': 'Male',
         'isPresent': false,
+        'comments': '',
         'ip_address': '207.87.87.185'
     },
     {
@@ -44,6 +47,7 @@ const tableData = [
         'email': 'gdodell2@plala.or.jp',
         'gender': 'Male',
         'isPresent': true,
+        'comments': '',
         'ip_address': '74.29.247.22'
     },
     {
@@ -53,6 +57,7 @@ const tableData = [
         'email': 'aegdal3@taobao.com',
         'gender': 'Female',
         'isPresent': true,
+        'comments': '',
         'ip_address': '54.97.195.151'
     },
     {
@@ -62,6 +67,7 @@ const tableData = [
         'email': 'gelcum4@printfriendly.com',
         'gender': 'Male',
         'isPresent': true,
+        'comments': '',
         'ip_address': '170.33.183.97'
     },
     {
@@ -71,6 +77,7 @@ const tableData = [
         'email': 'ballkins5@state.tx.us',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '177.22.255.117'
     },
     {
@@ -80,6 +87,7 @@ const tableData = [
         'email': 'peymer6@g.co',
         'gender': 'Female',
         'isPresent': true,
+        'comments': '',
         'ip_address': '201.244.5.118'
     },
     {
@@ -89,6 +97,7 @@ const tableData = [
         'email': 'gfibben7@timesonline.co.uk',
         'gender': 'Male',
         'isPresent': false,
+        'comments': '',
         'ip_address': '30.37.54.211'
     },
     {
@@ -98,6 +107,7 @@ const tableData = [
         'email': 'bblay8@cam.ac.uk',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '95.27.92.84'
     },
     {
@@ -107,6 +117,7 @@ const tableData = [
         'email': 'amcparlin9@wisc.edu',
         'gender': 'Male',
         'isPresent': true,
+        'comments': '',
         'ip_address': '69.84.70.73'
     },
     {
@@ -116,6 +127,7 @@ const tableData = [
         'email': 'atomashova@lulu.com',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '6.46.11.40'
     },
     {
@@ -125,6 +137,7 @@ const tableData = [
         'email': 'cdedeib@mozilla.com',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '252.183.79.93'
     },
     {
@@ -134,6 +147,7 @@ const tableData = [
         'email': 'wpoleyec@clickbank.net',
         'gender': 'Male',
         'isPresent': true,
+        'comments': '',
         'ip_address': '22.207.203.79'
     },
     {
@@ -143,6 +157,7 @@ const tableData = [
         'email': 'kairesd@phoca.cz',
         'gender': 'Male',
         'isPresent': false,
+        'comments': '',
         'ip_address': '133.144.158.50'
     },
     {
@@ -152,6 +167,7 @@ const tableData = [
         'email': 'jduckere@discuz.net',
         'gender': 'Male',
         'isPresent': true,
+        'comments': '',
         'ip_address': '9.118.2.153'
     },
     {
@@ -161,6 +177,7 @@ const tableData = [
         'email': 'mgarrowayf@people.com.cn',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '167.253.182.119'
     },
     {
@@ -170,6 +187,7 @@ const tableData = [
         'email': 'atringg@fda.gov',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '122.188.222.142'
     },
     {
@@ -179,6 +197,7 @@ const tableData = [
         'email': 'dfosserdh@ycombinator.com',
         'gender': 'Male',
         'isPresent': false,
+        'comments': '',
         'ip_address': '37.201.69.58'
     },
     {
@@ -188,6 +207,7 @@ const tableData = [
         'email': 'nstanetti@dot.gov',
         'gender': 'Male',
         'isPresent': false,
+        'comments': '',
         'ip_address': '41.212.19.163'
     },
     {
@@ -197,6 +217,7 @@ const tableData = [
         'email': 'slefevrej@sohu.com',
         'gender': 'Male',
         'isPresent': false,
+        'comments': '',
         'ip_address': '252.119.94.34'
     },
     {
@@ -206,6 +227,7 @@ const tableData = [
         'email': 'bangrovek@time.com',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '241.28.45.50'
     },
     {
@@ -215,6 +237,7 @@ const tableData = [
         'email': 'aabbsl@free.fr',
         'gender': 'Male',
         'isPresent': false,
+        'comments': '',
         'ip_address': '241.227.197.2'
     },
     {
@@ -224,6 +247,7 @@ const tableData = [
         'email': 'thoneywoodm@dagondesign.com',
         'gender': 'Male',
         'isPresent': false,
+        'comments': '',
         'ip_address': '217.244.11.191'
     },
     {
@@ -233,6 +257,7 @@ const tableData = [
         'email': 'jmcgintyn@wordpress.com',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '27.142.241.47'
     },
     {
@@ -242,6 +267,7 @@ const tableData = [
         'email': 'ssaddletono@google.nl',
         'gender': 'Male',
         'isPresent': false,
+        'comments': '',
         'ip_address': '134.27.139.30'
     },
     {
@@ -251,6 +277,7 @@ const tableData = [
         'email': 'aparryp@elegantthemes.com',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '62.110.80.45'
     },
     {
@@ -260,6 +287,7 @@ const tableData = [
         'email': 'cmowneq@chronoengine.com',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '155.130.69.109'
     },
     {
@@ -268,7 +296,7 @@ const tableData = [
         'last_name': 'Ashwell',
         'email': 'nashwellr@ycombinator.com',
         'gender': 'Female',
-
+        'comments': '',
         'ip_address': '17.25.56.98'
     },
     {
@@ -278,6 +306,7 @@ const tableData = [
         'email': 'bmatuss@cargocollective.com',
         'gender': 'Male',
         'isPresent': false,
+        'comments': '',
         'ip_address': '13.163.73.103'
     },
     {
@@ -287,6 +316,7 @@ const tableData = [
         'email': 'lmarkwellt@photobucket.com',
         'gender': 'Female',
         'isPresent': false,
+        'comments': '',
         'ip_address': '202.52.224.99'
     }
 ]
@@ -307,6 +337,15 @@ export const AttendanceDemo = () => {
         setTableDataa(newData)
     }
 
+    const handleComment = (comment: string, index: number) => {
+        const newData = [...tableDataa]
+        newData[index] = {
+            ...newData[index],
+            comments: comment,
+        }
+        setTableDataa(newData)
+    }
+
     const handleSubmitAttendance = () => {
         setOpenSnackbar(true)
     }
@@ -320,15 +359,14 @@ export const AttendanceDemo = () => {
             <Typography variant={betweenXSSM ? 'h6' : 'h4'} fontWeight='bold' p={3} textAlign='center'>
                 Attendance for Class V(B)
             </Typography>
-            <TableContainer component={Paper} sx={{maxHeight: betweenXSSM ? '86vh' : '78vh'}}>
+            <TableContainer component={Paper} sx={{maxHeight: `calc(100vh - 160px)`}}>
                 <Table stickyHeader>
                     <TableHead>
                         <TableRow>
                             <TableCell></TableCell>
                             <TableCell sx={{fontWeight: 'bold'}}>Roll</TableCell>
                             <TableCell sx={{fontWeight: 'bold'}}>Name</TableCell>
-                            <TableCell sx={{fontWeight: 'bold'}}>Email</TableCell>
-                            <TableCell sx={{fontWeight: 'bold'}}>Gender</TableCell>
+                            <TableCell sx={{fontWeight: 'bold'}}>Comments</TableCell>
                         </TableRow>
                     </TableHead>
 
@@ -341,7 +379,10 @@ export const AttendanceDemo = () => {
                                                   '&:last-child td, &:last-child th': {border: 0},
                                                   cursor: 'pointer'
                                               }}
-                                              onClick={() => {
+                                              onClick={(event) => {
+                                                  if (event.target instanceof HTMLInputElement) {
+                                                      return
+                                                  }
                                                   console.log(tableDatum.name)
                                                   handleIsPresent(index)
                                               }}>
@@ -353,8 +394,11 @@ export const AttendanceDemo = () => {
                                         </TableCell>
                                         <TableCell>{tableDatum.roll}</TableCell>
                                         <TableCell>{tableDatum.name}</TableCell>
-                                        <TableCell>{tableDatum.email}</TableCell>
-                                        <TableCell>{tableDatum.gender}</TableCell>
+                                        <TableCell>
+                                            <TextField value={tableDatum.comments} fullWidth onChange={(e: any) => {
+                                                handleComment(e.target.value, index)
+                                            }}/>
+                                        </TableCell>
                                     </TableRow>
                                 )
                             )
