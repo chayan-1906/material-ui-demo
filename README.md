@@ -17,7 +17,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
-## [Live Site (Netlify)](https://muii-material-ui.netlify.app/)
+## [Live Site (Cloudflare)](https://material-ui-demo.pages.dev/)
 
 ### Preview
 
